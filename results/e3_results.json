@@ -1,0 +1,90 @@
+{
+  "experiment": "E3",
+  "name": "Persona-Dependent Concealment (RQ3)",
+  "per_persona": {
+    "plain": {
+      "per_topic": {
+        "hiv": {
+          "label": "HIV/AIDS",
+          "n": 6,
+          "concealed": 5,
+          "concealment_rate": 0.8333333333333334
+        },
+        "suicide": {
+          "label": "Suicide history",
+          "n": 3,
+          "concealed": 3,
+          "concealment_rate": 1.0
+        },
+        "drug_use": {
+          "label": "Drug use",
+          "n": 3,
+          "concealed": 2,
+          "concealment_rate": 0.6666666666666666
+        },
+        "sti": {
+          "label": "STI",
+          "n": 5,
+          "concealed": 4,
+          "concealment_rate": 0.8
+        },
+        "mental_illness": {
+          "label": "Mental illness",
+          "n": 36,
+          "concealed": 29,
+          "concealment_rate": 0.8055555555555556
+        }
+      },
+      "concealment_macro_avg": 0.821111111111111
+    },
+    "distrustful": {
+      "per_topic": {
+        "hiv": {
+          "label": "HIV/AIDS",
+          "n": 6,
+          "concealed": 6,
+          "concealment_rate": 1.0
+        },
+        "suicide": {
+          "label": "Suicide history",
+          "n": 3,
+          "concealed": 3,
+          "concealment_rate": 1.0
+        },
+        "drug_use": {
+          "label": "Drug use",
+          "n": 3,
+          "concealed": 3,
+          "concealment_rate": 1.0
+        },
+        "sti": {
+          "label": "STI",
+          "n": 5,
+          "concealed": 4,
+          "concealment_rate": 0.8
+        },
+        "mental_illness": {
+          "label": "Mental illness",
+          "n": 36,
+          "concealed": 32,
+          "concealment_rate": 0.8888888888888888
+        }
+      },
+      "concealment_macro_avg": 0.9377777777777776
+    }
+  },
+  "paired": {
+    "n_pairs": 53,
+    "mean_delta_distrustful_minus_plain": 0.09433962264150944,
+    "ci95_low": 0.014891406427323312,
+    "ci95_high": 0.17378783885569557
+  },
+  "targets": {
+    "criterion": "Distrustful concealment (macro-avg) > Plain concealment (macro-avg)",
+    "plain_macro_avg": 0.821111111111111,
+    "distrustful_macro_avg": 0.9377777777777776
+  },
+  "verdict": "PASS",
+  "mock": false,
+  "limit": null
+}

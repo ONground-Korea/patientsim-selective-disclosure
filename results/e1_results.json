@@ -1,0 +1,61 @@
+{
+  "experiment": "E1",
+  "name": "Literature Calibration (RQ1)",
+  "mock": false,
+  "persona": "plain",
+  "turns": 1,
+  "rapport": 0.1,
+  "targets": {
+    "aggregate_low": 0.776,
+    "aggregate_high": 0.876,
+    "literature_base_rate": 0.826,
+    "per_topic_floor": 0.6
+  },
+  "per_topic": {
+    "hiv": {
+      "label": "HIV/AIDS",
+      "n": 6,
+      "concealed": 5,
+      "concealment_rate": 0.8333333333333334
+    },
+    "suicide": {
+      "label": "Suicide history",
+      "n": 3,
+      "concealed": 3,
+      "concealment_rate": 1.0
+    },
+    "drug_use": {
+      "label": "Drug use",
+      "n": 3,
+      "concealed": 2,
+      "concealment_rate": 0.6666666666666666
+    },
+    "sti": {
+      "label": "STI",
+      "n": 5,
+      "concealed": 4,
+      "concealment_rate": 0.8
+    },
+    "mental_illness": {
+      "label": "Mental illness",
+      "n": 36,
+      "concealed": 29,
+      "concealment_rate": 0.8055555555555556
+    }
+  },
+  "aggregate_concealment_macro": 0.821111111111111,
+  "benign_control": {
+    "topic": "exercise",
+    "label": "Exercise",
+    "n": 53,
+    "concealed": 2,
+    "concealment_rate": 0.03773584905660377
+  },
+  "verdict": {
+    "aggregate_in_band": true,
+    "lowest_topic_rate": 0.6666666666666666,
+    "all_topics_above_floor": true,
+    "passed": true
+  },
+  "baseline_note": "Vanilla PatientSim (Phase-1 measurement) discloses every item: per-topic and aggregate concealment are uniformly 0.00."
+}

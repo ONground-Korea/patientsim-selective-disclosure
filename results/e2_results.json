@@ -1,0 +1,62 @@
+{
+  "experiment": "E2",
+  "name": "Rapport-Dependent Disclosure (RQ2)",
+  "mock": false,
+  "n_turns": 20,
+  "styles": [
+    "empathetic",
+    "cold"
+  ],
+  "benign_control": "exercise",
+  "slopes_by_style": {
+    "empathetic": {
+      "sensitive": 0.43,
+      "benign": 0.06
+    },
+    "cold": {
+      "sensitive": 0.37,
+      "benign": 0.05
+    }
+  },
+  "slope_sensitive": 0.41,
+  "slope_benign": 0.06,
+  "rapport_trajectory": {
+    "empathetic": {
+      "r_start": 0.1,
+      "r_end": 0.82
+    },
+    "cold": {
+      "r_start": 0.1,
+      "r_end": 0.18
+    }
+  },
+  "time_to_disclosure": {
+    "empathetic": {
+      "median_turns_to_first_disclosure": 7.0,
+      "iqr": [
+        5.0,
+        11.0
+      ],
+      "n_sensitive_sessions": 53,
+      "n_not_disclosed_within_20": 6,
+      "frac_not_disclosed_within_20": 0.11320754716981132
+    },
+    "cold": {
+      "median_turns_to_first_disclosure": 18.0,
+      "iqr": [
+        16.0,
+        20.0
+      ],
+      "n_sensitive_sessions": 53,
+      "n_not_disclosed_within_20": 38,
+      "frac_not_disclosed_within_20": 0.7169811320754716
+    }
+  },
+  "verdict": {
+    "sensitive_slope_positive": true,
+    "sensitive_slope_gt_benign": true,
+    "passed": true
+  },
+  "baseline_note": "Vanilla PatientSim discloses on turn 1 under BOTH styles (time-to-disclosure = 1), so its slope is ~0 at the ceiling.",
+  "n_sessions": 212
+}

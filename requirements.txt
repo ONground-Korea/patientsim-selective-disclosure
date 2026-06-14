@@ -1,0 +1,15 @@
+# Runtime dependencies for patientsim-selective-disclosure.
+#
+# Mock mode (python -m experiments.run_all --mock) needs ONLY these two packages
+# and NO API keys whatsoever -- the pipeline is verifiably runnable offline.
+requests
+numpy
+
+# Real backends additionally require credentials supplied via environment
+# variables (never stored in the repo):
+#   * Gemini-2.5-Flash backend  -> GOOGLE_API_KEY or GEMINI_API_KEY
+#   * GPT-4o doctor agent/judge -> OPENAI_API_KEY
+# The bundled LLMClient talks to both providers over plain HTTPS via `requests`,
+# so no provider SDK is strictly required. If you prefer the official SDK for the
+# Gemini backend you may optionally install:
+#   google-generativeai

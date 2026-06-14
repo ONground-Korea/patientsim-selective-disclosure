@@ -1,0 +1,12 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+
+# Local environment & secrets (NEVER commit credentials)
+.env
+.venv/
+
+# Packaging
+*.egg-info/
+
+# NOTE: results/*.json are committed as example outputs -- do NOT ignore them.
